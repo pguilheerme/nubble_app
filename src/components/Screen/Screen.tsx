@@ -1,11 +1,16 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Box, TouchableOpacityBox} from '../Box/Box';
-import {useAppSafeArea} from '@hooks';
-import {Icon, Text} from '@components';
-import {KeyboardAvoidingView, Platform, ScrollView} from 'react-native';
-import {ScrollViewContainer, ViewContainer} from './components/ScreenContainer';
-import {useAppTheme} from '@hooks';
+import {KeyboardAvoidingView, Platform} from 'react-native';
+
 import {useNavigation} from '@react-navigation/native';
+
+import {Icon, Text} from '@components';
+import {useAppSafeArea} from '@hooks';
+import {useAppTheme} from '@hooks';
+
+import {Box, TouchableOpacityBox} from '../Box/Box';
+
+import {ScrollViewContainer, ViewContainer} from './components/ScreenContainer';
 
 interface ScreenProps {
   children: React.ReactNode;
